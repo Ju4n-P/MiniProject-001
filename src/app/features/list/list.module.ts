@@ -11,7 +11,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [
     CommonModule,
     ListRoutingModule,
-    IonicModule
+    IonicModule,
   ]
 })
 export class ListModule { }
