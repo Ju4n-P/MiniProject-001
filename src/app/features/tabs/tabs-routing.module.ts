@@ -6,6 +6,7 @@ const routes: Routes = [
   {path: '', component:TabsComponent, children: [
     {path: "list", loadChildren:()=>import('../list/list.module').then(m=>m.ListModule)},
     {path: "search", loadChildren:()=>import('../search/search.module').then(m=>m.SearchModule)},
+    {path: "detail", loadChildren:()=>import('../detail/detail.module').then(m=>m.DetailModule)},
     {path: '', redirectTo: 'list', pathMatch:'full'},
   ]}
   

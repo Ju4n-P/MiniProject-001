@@ -1,1 +1,7 @@
-<p>detail works!</p>
+
+<p>version observable, lelvis qu'on rajoue permet d'éviter de monter une erreur</p>
+{{(item$|async)?.name}}
+
+<p>version non observable</p>
+{{itemPromise|json}}
+

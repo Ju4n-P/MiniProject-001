@@ -14,4 +14,12 @@ export class AdditiveService {
   getAll():Observable<any[]>{
     return this._http.get<any[]>('http://localhost:3000/additives')
   }
+
+  getById(id:string): Observable<any>{
+    return this._http.get<any>(`http://localhost:3000/${id}`);
+  }
+
+  addItem(item:any){
+    return this._http.post<any>(`http://localhost:3000/additives`, item);
+  }
 }

@@ -15,8 +15,8 @@ export class ListComponent implements OnInit {
     private _api:AdditiveService,
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
     this.items$ = this._api.getAll();
   }
-
+  
 }
