@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 export class AdditiveService {
 
   constructor(
-    private _http:HttpClient,
+    private _http: HttpClient
   ) { }
 
   getAll():Observable<any[]>{
-    return this._http.get<any[]>('http://localhost/additives')
+    return this._http.get<any[]>('http://localhost:3000/additives')
   }
 }
